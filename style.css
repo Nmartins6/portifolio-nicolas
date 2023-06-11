@@ -44,7 +44,7 @@ html body {
 #header .profile h1 {
     font-size: 24px;
     margin: 0;
-    padding: 0;
+    padding-bottom: 15px;
     font-weight: bold;
     text-align: center;
     color: #fff;
@@ -53,7 +53,9 @@ html body {
 
 #header .profile .social-links {
     margin: 15px 0;
+    padding-bottom: 15px;
     text-align: center;
+
 }
 
 #header .profile .social-links a {
@@ -90,6 +92,7 @@ html body {
 
 .nav-menu {
     padding: 1rem;
+    border-top: solid 1px #343434;
 
 }
 
@@ -172,4 +175,62 @@ section#home div#rolldown a{
 }
 
 
+
+
+
+
+/*
+*  Menu mobile icon
+*/
+
+.menu-nav-active {
+    overflow: hidden;
+
+}
+
+.menu-nav-active #header {
+    left: 0;
+}
+
+i.menu-mobile {
+    position: fixed;
+    color: #fff;
+    background-color: #242424;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99999;
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 1024px){
+    #header {
+        left: -300px;
+
+    }
+
+    i.menu-mobile {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    section#home span#subtitle {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+   main {
+    margin-left: 0;
+   } 
+}
 
